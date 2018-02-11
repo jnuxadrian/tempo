@@ -1,2 +1,2 @@
 # tempo
-github bot
+github bot to enforce TTL.
