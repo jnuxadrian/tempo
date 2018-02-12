@@ -1,0 +1,24 @@
+{
+    "teamcity": {
+        "pull_request": {
+            "cache_tip_merge": true,
+            "ids": [
+                "ClientAndroid_Master_PreMerge_PremergeAudit"
+            ],
+            "personal": true,
+            "ttl": {
+              "duration": "10m",
+              "branch-reference": "master"
+            }
+        },
+        "push": {
+            "refs/heads/master": [
+                "ClientAndroid_Master_PostMerge_PostmergeAudit",
+                "ClientAndroid_Master_PreMerge_PremergeAudit"
+            ],
+            "refs/heads/release-8.4.22": [
+                "ClientAndroid_Release8422_PostMerge_PostmergeAudit"
+            ]
+        }
+    }
+}
